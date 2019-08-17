@@ -58,7 +58,6 @@ if ($cnt > 0) {
             $mail->send();
             $message = sprintf('Message has been sent to %s. %s(%s) At %s' . PHP_EOL, $num, $recipient, $sendMail, date('Y-m-d H:i:s', time()));
             error_log($message, 3, $start.".log");
-            error_log($body, 3, $start.".log");
             echo $message;
         } catch (Exception $e) {
             $message = sprintf('Message could not be sent to %s. %s(%s) At %s' . PHP_EOL, $num, $recipient, $sendMail, date('Y-m-d H:i:s', time()));
