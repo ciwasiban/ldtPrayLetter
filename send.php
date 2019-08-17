@@ -15,12 +15,13 @@ $PrayLetter->generate();
 // 取得收件者清單
 $recipientList = $PrayLetter->getRecipentList();
 
-// 開始寄信
+// 開始寄信 寫log
 date_default_timezone_set('Asia/Taipei');
 $start = date('Ymd-His', time());
 echo $start_message = "start send mail..." . PHP_EOL;
 error_log($start_message , 3, $start.".log");
 
+// 寄信
 $cnt = count($recipientList);
 if ($cnt > 0) {
     $num = 0;
