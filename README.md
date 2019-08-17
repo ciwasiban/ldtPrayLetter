@@ -21,6 +21,7 @@ step2. at top folder to run:
 composer require phpmailer/phpmailer
 ```
 (ref:2 or ref:1)
+
 notice: PHP OpenSSL required (ref:4 or ref:3)
 
 step3. 申請一個專門用來寄信的 google email 並且 降低其安全性設定 (ref:3)
