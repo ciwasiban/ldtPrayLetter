@@ -15,6 +15,11 @@ class PrayLetter
 
     // 本月焦點
     public $letterUrl = 'http://ldtmission.blogspot.tw/2019/07/letter.html';
+    public $focusTitle1 = '看見建立門訓牧養團隊的需要';
+    public $focusTitle2 = '神興起領袖門徒成為我的幫助';
+    public $focusTitle3 = '讓領袖門徒逐步接手門訓小組';
+    public $focusTitle4 = '【門徒見證】不再是憑自己做乃是靠著主來做';
+
     public $focusPoint1 = Array();  // setting in function setFocusPoint()
     public $focusPoint2 = Array();
     public $focusPoint3 = Array();
@@ -88,9 +93,9 @@ class PrayLetter
     }
 
     function setFocusPoint() {
-        $this->focusPoint1 = Array('alt'=>'看見建立門訓牧養團隊的需要', 'url'=> $this->letterUrl . '#focus_point1');
-        $this->focusPoint2 = Array('alt'=>'神興起領袖門徒成為我的幫助', 'url'=> $this->letterUrl . '#focus_point2');
-        $this->focusPoint3 = Array('alt'=>'讓領袖門徒逐步接手門訓小組', 'url'=> $this->letterUrl . '#focus_point3');
-        $this->focusPoint4 = Array('alt'=>'【門徒見證】不再是憑自己做乃是靠著主來做', 'url'=> $this->letterUrl . '#focus_point4');
+        $this->focusPoint1 = Array('alt'=> $this->focusTitle1, 'url'=> $this->letterUrl . '#focus_point1');
+        $this->focusPoint2 = Array('alt'=> $this->focusTitle2, 'url'=> $this->letterUrl . '#focus_point2');
+        $this->focusPoint3 = Array('alt'=> $this->focusTitle3, 'url'=> $this->letterUrl . '#focus_point3');
+        $this->focusPoint4 = Array('alt'=> $this->focusTitle4, 'url'=> $this->letterUrl . '#focus_point4');
     }
 }
