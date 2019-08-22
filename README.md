@@ -9,7 +9,7 @@ step1. clone this git:
 git clone git@github.com:ciwasiban/ldtPrayLetter.git
 ```
 
-step2. at top folder to run:
+step2. change to ldtPrayLetter/ folder to run:
 ```sh
 composer require phpmailer/phpmailer
 ```
